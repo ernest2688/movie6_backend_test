@@ -24,6 +24,7 @@ You can check the import process by inspecting the mongodb
     You then can find the data is imported in database newdb, collection movies.
 
 ## API testing
+I am using Flask as API.
 1. Run the following code
     ```sh
     myproject\Scripts\activate
