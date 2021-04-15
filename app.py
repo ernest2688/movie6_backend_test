@@ -19,7 +19,7 @@ def get_all_movies():
 
     for q in movies.find():
         output.append({
-        'uuid' : q['uuid'], 
+        'uuid' : q['_id'], 
         'chi_name' : q['chi_name'],
         "eng_name" : q["eng_name"],
         "chi_genre" : q["chi_genre"],
@@ -43,11 +43,11 @@ def get_all_movies():
 @app.route('/movieDetail', methods=['GET'])
 def get_one_movie():
     movie = mongo.db.movies
-    q = movie.find_one({'uuid' : request.args.get('uuid')})
+    q = movie.find_one({'_id' : request.args.get('uuid')})
     
     if q:
         output = {
-        'uuid' : q['uuid'], 
+        'uuid' : q['_id'], 
         'chi_name' : q['chi_name'],
         "eng_name" : q["eng_name"],
         "chi_genre" : q["chi_genre"],

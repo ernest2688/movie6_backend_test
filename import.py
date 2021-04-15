@@ -23,7 +23,7 @@ old_timezone = pytz.timezone('Asia/Shanghai')
 new_timezone = pytz.timezone('UTC')
 
 for i in movie_list:
-    i['uuid'] = str(uuid.uuid4())
+    i['_id'] = str(uuid.uuid4())
     
     
     odate = i['open_date']
