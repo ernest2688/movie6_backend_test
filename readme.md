@@ -1,5 +1,9 @@
 # Backend Test Readme
 > By Chung Mang Fung Ernest
+
+##Before
+clone the git repo 
+
 ## Docker Setup
 1. Prepare and start a docker environment
 
