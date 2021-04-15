@@ -12,7 +12,7 @@ clone the git repo
     docker pull mongo
     docker run -d -p 27017:27017 --name mongodb mongo
     ```
-3. Run import.py to import the data
+3. Run import.py to import the data.
 You can check the import process by inspecting the mongodb
     ```sh
     docker exec -it mongodb bash
